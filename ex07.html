@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <style>
+        #iniciar{
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media do aluno v1.0</h1>
+    <button id="iniciar">Calcular média</button>
+    <p id="resposta"></p>
+    <script>
+        var b = document.querySelector('button#iniciar')
+        b.addEventListener('click', clicou)
+        
+        function clicou(){
+            var nome = window.prompt('Digite seu nome: ')
+            var n1 = Number(window.prompt('Escolha um numero: '))
+            var n2 = Number(window.prompt('Escolha outro numero: '))
+
+            var media = (n1 + n2) / 2
+
+            var resposta = document.querySelector('p#resposta')
+            resposta.innerHTML = (`Calculando a média final de: ${nome} <br> As notas obtidas foram ${n1} e ${n2} <br> A média final será: ${media}`)
+            
+
+        }
+    </script>
+    
+</body>
+</html>

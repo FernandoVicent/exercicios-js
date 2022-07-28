@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+    <style>
+        #botao{
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interagindo com botão</h1>
+    <button id="botao">Clique em mim</button>
+    <script>
+        var b = document.querySelector('button#botao')
+        b.addEventListener('click', clicou)
+        function clicou(){
+            window.alert('Você clicou no botão')
+
+
+        }
+    </script>
+    
+</body>
+</html>

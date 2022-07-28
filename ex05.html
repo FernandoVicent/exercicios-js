@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+    <style>
+        #iniciar{
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com numeros</h1>
+    <button id="iniciar">Clique para começar</button>
+    <p id="resposta"></p>
+    <script>
+        window.alert('seja bem vindo ao meu site')
+        var b = document.querySelector('button#iniciar')
+        b.addEventListener('click', clicou)
+        
+        function clicou(){
+            var pegaNumero = window.prompt('Escolha um numero: ')
+
+            var resposta = document.querySelector('p#resposta')
+            var dobro = pegaNumero * 2
+            var metade = pegaNumero / 2
+            //resposta.innerHTML = (`O dobro de <strong>${pegaNumero}</strong>, é  ${dobro} e a metade é ${metade} ✌`)
+            resposta.innerHTML = (`O dobro de ${pegaNumero} é ${pegaNumero * 2} e a metade é ${pegaNumero / 2}`)
+            
+
+        }
+    </script>
+    
+</body>
+</html>

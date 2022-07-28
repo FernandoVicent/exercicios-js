@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+    <style>
+        #iniciar{
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+    <button id="iniciar">Clique para começar</button>
+    <p id="saudacao"></p>
+    <script>
+        
+        var b = document.querySelector('button#iniciar')
+        b.addEventListener('click', clicou)
+        
+        function clicou(){
+            var nome = window.prompt('Qual seu nome? ')
+            var p = document.querySelector('p#saudacao')
+            p.innerHTML = (`Olá <strong>${nome}</strong>, é um prazer te conhecer! ✌`)
+            
+
+        }
+    </script>
+    
+</body>
+</html>

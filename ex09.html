@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+        #iniciar{
+            height: 100px;
+            width: 200px;
+        }
+        body{
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+        }
+        button{
+            width: 200px;
+            height: 100px;
+        }
+        h5{
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de clicks</h1>
+    <button id="adicionar">clique para adicionar</button>
+    <button id="zerar">clique para zerar</button>
+    <h5>esperando...</h5>
+    <script>
+        var add = document.querySelector('button#adicionar')
+        var dell = document.querySelector('button#zerar')
+
+        add.addEventListener('click', adicionar)
+        dell.addEventListener('click', zerar)
+        
+        var mostrador = document.getElementsByTagName('h5')[0]
+        
+        var c = 0
+        
+        function adicionar(){
+            c ++
+            mostrador.innerHTML = c
+            
+        }
+        function zerar(){
+            c = 0
+            mostrador.innerHTML = c
+            
+        }
+    </script>
+    
+</body>
+</html>

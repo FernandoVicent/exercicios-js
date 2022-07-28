@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <style>
+        #iniciar{
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Varios calculos em JS</h1>
+    <button id="iniciar">clique para calcular</button>
+    <section id="resultados">
+        <p>O resultado vai aparecer aqui ...</p>
+        <hr>
+    </section>
+    <script>
+        var b = document.querySelector('button#iniciar')
+        b.addEventListener('click', clicou)
+        
+        function clicou(){
+            var n1 = Number(window.prompt('Escolha um numero: '))
+
+            var resposta = document.querySelector('section#resultados')
+            resposta.innerHTML = `<p> o valor a ser calculado é <strong> ${n1} </strong><hr>`
+            resposta.innerHTML += `<p>O seu valor absoluto é ${Math.abs(n1)}</p>`
+            resposta.innerHTML += `<p>A sua parte inteira é ${Math.trunc(n1)}</p>`
+            resposta.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(n1)}</p>`
+            resposta.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(n1)}</p>` 
+            resposta.innerHTML += `<p>A sua raiz cúbica é ${Math.cbrt(n1)}</p>`        
+            resposta.innerHTML += `<p>O valor de ${n1}<sup>2</sup> é ${Math.pow(n1, 2)}</p>`
+            resposta.innerHTML += `<p>O valor de ${n1}<sup>3</sup> é ${Math.pow(n1, 3)}</p>`
+            
+            
+
+        }
+    </script>
+    
+</body>
+</html>
