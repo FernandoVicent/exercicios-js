@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='style.css'>
+    <title>Exercicio 14</title>
+    
+</head>
+<body>
+    <h1>Interagindo com o sistema</h1>
+    <button id="iniciar">Iniciar</button>
+    <p id="resposta"></p>
+    <script>
+        var b = document.querySelector('button#iniciar')
+        b.addEventListener('click', clicou)
+        
+        function clicou(){
+
+            var resposta = document.querySelector('p#resposta')
+            resposta.innerHTML += `<p>  ${Date.day()} </p>` // ana paula - 57
+
+        }
+    </script>
+    
+</body>
+</html>

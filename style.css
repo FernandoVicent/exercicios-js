@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+        #iniciar{
+            height: 100px;
+            width: 200px;
+        }
+        body{
+            font-size: 20pt;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+        }
+        button{
+            width: 200px;
+            height: 100px;
+        }
+        h5{
+            font-size: 20pt;
+        }

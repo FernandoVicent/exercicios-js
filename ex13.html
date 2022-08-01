@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='style.css'>
+    <title>Exercicio 12</title>
+    
+</head>
+<body>
+    <h1>Qual é o maior valor</h1>
+    <button id="iniciar">Iniciar</button>
+    <p id="resposta"></p>
+    <script>
+        var b = document.querySelector('button#iniciar')
+        b.addEventListener('click', clicou)
+        
+        function clicou(){
+
+            var n1 = Number(window.prompt('Escolha um numero: '))
+            var n2 = Number(window.prompt('Escolha um segundo numero: '))
+            var resposta = document.querySelector('p#resposta')
+            resposta.innerHTML += `<p>Analisando os valores ${n1} e ${n2}, </p>`
+            if(n1 > n2){
+                resposta.innerHTML += `o numero ${n1} é maior`
+            }
+            
+            else{
+                resposta.innerHTML += `o numero <strong>${n2}</strong> é maior`
+            }
+            
+
+        }
+    </script>
+    
+</body>
+</html>
